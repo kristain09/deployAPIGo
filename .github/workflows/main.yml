@@ -20,7 +20,8 @@ jobs:
         script: |
           cd prj
           rm -rf deployAPIGo
-          git clone git@github.com:kristain09/deployAPIGo.git
+          git clone https://github.com/kristain09/deployAPIGo
+          ls -al
           cd deployAPIGo
           go run main.go
           
