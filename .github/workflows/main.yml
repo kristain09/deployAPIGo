@@ -18,6 +18,9 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          mkdir buatanAction
-          cd buatanAction
-          touch filesaya.txt
+          cd prj
+          rm -rf deployAPIGo
+          git clone git@github.com:kristain09/deployAPIGo.git
+          cd deployAPIGo
+          go run main.go
+          
